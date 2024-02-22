@@ -2,28 +2,28 @@
 
 ### __Part 1: Domino__
 
-Create a class to represent a single domino.
+Create a class to represent a single Domino.
 
-A domino consists of 2 sides, we'll call them "top" and "bottom". Each side holds an integer representing the number of dots it has.
+A Domino consists of 2 sides, we'll call them "top" and "bottom". Each side holds an integer representing the number of dots it has.
 
 Create the following functions:
 - Default Constructor - sets the top and bottom to 0.
 - Overloading Constructor - takes in 2 integers and puts the first one into top and the second one into bottom.
 - Getters
 - Setters
-- toString that displays the domino as a fraction (top/bottom) - Don't do actual math on this.
+- toString that displays the Domino as a fraction (top/bottom) - Don't do actual math on this.
 - flip() - switches the order of the top and bottom values.
 - settle() - compares the top and bottom values and orders them so the smaller number is on top. (use flip to do this once the smaller value has been identified)
 - compareTo(Domino other)
-  - Compares the smallest value of each domino.
+  - Compares the smallest value of each Domino.
     - If this < other - return -1
     - If this > other - return 1
-    - If this == other Compare the larger value of each domino
+    - If this == other Compare the larger value of each Domino
       - If this < other - return -1
       - If this > other - return 1
       - If this == other - return 0
 - compareToWeight(Domino other)
-  - Counts the total number of dots on each ½ of the Domino and compares it to the total number on the other domino.
+  - Counts the total number of dots on each ½ of the Domino and compares it to the total number on the other Domino.
     - Returns -1 if this < other
     - Returns 1 if this > other
     - Returns 0 if this == other
